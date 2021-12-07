@@ -1,0 +1,286 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#navigation{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main{
+    height: 95%;
+    width: 100%;
+    background-image: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+    display: flex;
+    justify-content: center;
+}
+
+#navigation p{
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+#navigation input{
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background-color: #f6f7fd;
+    outline: none;
+    border:none;
+    padding-left: 0.5rem;
+}
+
+#navigation i{
+    position: relative;
+    right: 2.6rem;
+    top: 0rem;
+    font-size: 0.8rem;
+}
+
+#account{
+    max-width: 18rem;
+    width: 100%;
+    margin: 1rem 0.5rem 0 15%;
+}
+
+#posts{
+    max-width: 55rem;
+    width: 100%;
+    margin: 1rem 15% 0 0.5rem;
+}
+
+#name_picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; 
+}
+
+#name_picture img{
+   height: 4.5rem;
+   width: 4.5rem;
+   border-radius: 4.5rem;
+   margin: 0.7rem 25% 0rem 25%;
+}
+
+#name_picture h5{
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+#statistics{
+    display: flex;
+    background-color: #f6f7fd;
+}
+
+#posts_reactions{
+    width: 70%;
+    display: flex;
+}
+
+#button_logout{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.posts_reactions_stat{
+    margin-left: 1rem;
+}
+
+#button_logout button{
+    border-radius: 1rem;
+    border: 2px solid rgb(118, 219, 245); 
+    color: rgb(118, 219, 245);
+    font-weight: 750;
+    height: 2rem;
+    background-color: #f6f7fd;
+}
+
+.posts_reactions_stat p:first-child{
+    margin-top:0.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 550;
+    color: rgb(87, 85, 85);
+}
+
+.posts_reactions_stat p:last-child{
+    margin-top:0;
+    margin-bottom: 0.5rem;
+    color: rgb(118, 219, 245);
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+#write_smth{
+    display: flex;
+    align-items: center;
+    background-color: #F3FCFD;
+}
+
+#write_smth img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+#say_smth{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#say_smth input{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(202, 201, 201);
+    border-radius: 1rem;
+    height: 1.5rem;
+    padding-left: 1rem;
+}
+
+#say_smth input::placeholder{
+    color: rgb(65, 209, 245);
+    font-weight: 550;
+    
+}
+
+#say_smth i{
+    position: relative;
+    right: 1.7rem;
+    color: rgb(101, 212, 240);
+    font-size: 0.8rem;
+}
+
+.actual_posts img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 1.25rem;
+}
+
+.actual_posts{
+    display: flex;
+    background-color: white;
+}
+
+.the_post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name_time{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.name_time p:first-child{
+    font-weight: 600;
+    margin: 1rem 0.5rem 0.5rem 0.3rem;
+}
+
+.name_time i{
+    font-size: 0.3rem;
+    padding: 0.6rem 0rem 0 0.3rem;
+    color: grey;
+}
+
+.name_time p:last-child{
+    color: grey;
+    margin: 1rem 0.5rem 0.5rem 0.3rem;
+}
+
+.the_post p{
+    margin:0.3rem;
+}
+
+.reactions_likes{
+    margin: 0.7rem 0 1rem 0.3rem;
+}
+.reactions_likes span{
+    margin-right: 2rem ;
+}
+
+#remove{
+    color: grey;
+    margin:1rem;
+}
+
+hr{
+    margin:0;
+    border: 0.01rem solid #d6d3d3;
+    background: #d6d3d3;
+}
+
+@media only screen and (max-width:890px) {
+
+    #navigation{
+        justify-content: center;
+    }
+
+    #main{
+        display: block;
+        margin: 0;
+    }
+
+    #account{
+        margin: 0;
+        padding:  5% 5% 0 5%;
+        max-width: 90%;
+    }
+
+    #posts{
+        margin: 0 5%;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    #name_picture img{
+        height: 5.25rem;
+        width: 5.25rem;
+        border-radius: 5.25rem;
+    }
+
+    .posts_reactions_stat p:first-child{
+        font-size: 0.75rem;
+    }
+
+    .posts_reactions_stat p:last-child{
+        font-size: 1.125rem;
+    }
+
+    #posts_reactions{
+        height: 3.75rem;
+    }
+
+    #write_smth{
+        height: 3rem;
+    }
+
+    .the_post p{
+        font-size: 0.875rem;
+    }
+
+    .posts{
+        padding: 1rem;
+    }
+
+    #button_logout{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+}
