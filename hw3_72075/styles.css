@@ -1,0 +1,238 @@
+:root {
+    --color1: #FFFFFF;
+    --color2: #EAEAEA;
+    --color3: #C4C4C4;
+    --color4: #000000;
+    --fontsize1: 16px;
+    --fontsize2: 32px;
+    --borderradius1: 16px;
+    --borderradius2: 8px;
+    --spacing1: 16px;
+    --spacing2: 8px;
+    --opacity: 0.5;
+    --fontweight1: 700;
+    --fontweight2: 400;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    border: 1px solid var(--color4);
+    border-radius: 10px;
+}
+
+#meal_list_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid var(--color4);
+}
+
+#meal_list_title p{
+    font-size: var(--fontsize2);
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: var(--spacing2);
+}
+
+#filters{
+    border: 1px solid var(--color4);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: var(--spacing1);
+    justify-content: center;
+}
+
+#filters input{
+    margin: var(--spacing1) var(--spacing1) var(--spacing1) 0;
+    border-radius: 7px;
+    background-color: var(--color2);
+    padding: 5px;
+    border: 1px solid var(--color4);
+}
+
+#filters input::placeholder{
+    color: var(--color4);
+    font-weight: var(--fontweight2);
+}
+
+#filters input:first-child{
+   margin-left: var(--spacing1);
+}
+
+#meal_list{
+    border: 1px solid var(--color4); 
+    margin: var(--spacing1);
+    border-radius: 5px;
+}
+
+#recipes{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#recipes li:nth-child(even){
+    background-color: var(--color2);
+}
+
+#recipes li:last-child div{
+    border-bottom: none;
+}
+
+.recipe_container{
+    border-bottom: 1px solid var(--color4); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing1);
+}
+
+.img_name{
+    display: flex;
+    align-items: center;   
+}
+
+.img_name img{
+    height: 50px;
+    width: 50px;
+    margin-right: var(--spacing1);
+    border-radius: 10px;
+} 
+
+.img_name span{
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category_region_button span{
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category_region_button button{
+    height: 40px;
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color3);
+    border-radius: 10px;
+    border: 1px solid #808080;
+    margin-left: var(--spacing1);
+}
+
+.view{ 
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,var(--opacity)); 
+    padding-top: 60px;
+}
+
+.content {
+    background-color: var(--color1);
+    margin: 5% auto 15% auto;
+    border: 1px solid var(--color4);
+    border-radius: 20px;
+    width: 60%; 
+}
+
+#meal_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2);
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid var(--color4);
+}
+
+#meal_title p{
+    font-size: var(--fontsize2);
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: var(--spacing2);
+    text-align: center;
+}
+
+#main_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_information img{
+    width: 250px;
+    height: 250px;
+    margin: var(--spacing1);
+}
+
+#main_information p{
+   margin: var(--spacing1);
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: var(--fontweight2);
+}
+
+.inner_table{
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--color4);
+    border: none;
+    margin-bottom: var(--spacing1);
+    
+ }
+ .inner_table th:first-child{
+    background-color: var(--color3); 
+    border-radius: 10px 0 0 0;
+    padding: var(--spacing2);
+    text-align: center;
+ }
+ 
+ .inner_table th:last-child{
+    background-color: var(--color3);
+    border-radius: 0 10px 0 0;
+    padding: var(--spacing2);
+    text-align: center;
+ }
+ 
+ .inner_table td{
+    background-color: var(--color2);
+    padding: var(--spacing2);
+ }
+ 
+ .inner_table tr:last-child td:first-child{
+    border-radius: 0 0 0 10px;
+ }
+ 
+ .inner_table tr:last-child td:last-child{
+    border-radius: 0 0 10px 0;
+ }
+
+#button_close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing1);
+    border-top: 1px solid var(--color4);
+    background-color: var(--color2);
+    border-radius: 0 0 20px 20px;
+}
+
+#button_close button{
+    height: 30px;
+    font-weight: var(--fontweight1);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color3);
+    border-radius: 10px;
+    border: 1px solid var(--color4);
+    margin-left: var(--spacing1);
+}
